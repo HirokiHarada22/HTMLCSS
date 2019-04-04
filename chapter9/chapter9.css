@@ -9,21 +9,18 @@ main {
 	margin: 50px auto;
 }
 
-
 .contents-list {
 	width: 300px;
 	padding-right: 10px;
 	padding-left: 10px;
-	border: 1px solid black;
+	border: 1px solid lightgray;
 	position: relative;
 	margin-right: 30px;
 	float: left;
 }
-
 .contents-list:last-child {
 	margin-right: 0;
 }
-
 .contents-img1 {
 	height: 150px;
 	background-image: url(img/flow01.png);
@@ -31,7 +28,6 @@ main {
 	background-position: bottom;
 	margin: 10px 0 15px 0;
 }
-
 .contents-img2 {
 	height: 150px;
 	background-image: url(img/flow02.png);
@@ -39,7 +35,6 @@ main {
 	background-position: bottom;
 	margin: 10px 0 15px 0;
 }
-
 .contents-img3 {
 	height: 150px;
 	background-image: url(img/flow03.png);
@@ -47,7 +42,6 @@ main {
 	background-position: bottom;
 	margin: 10px 0 15px 0;
 }
-
 .contents-number {
 	position: absolute;
 	top: 0;
@@ -56,13 +50,51 @@ main {
 	color: white;
 	padding: 3px;
 }
-
 .contents-text p {
-	width: 280px;
 	padding-bottom: 10px;
+	color: dimgray;
+}
+.contents-text h3 {
+	padding-bottom: 5px;
+	color: dimgray;
 }
 
-.contents-text h3 {
-	width: 280px;
-	padding-bottom: 5px;
+@media screen and (max-width:768px){
+	main{
+		width : 100%;
+		margin: 50px 0;
+	}
+
+	.contents-list{
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	.contents-list:last-child {
+	margin: 0 auto;
+	}
+	.contents-list:nth-child(2) {
+	margin: 20px auto;
+	}
+	.contents-number{
+	font-size: 150%;
+	}
+	.contents-text h3{
+		font-size: 200%;
+	}
+	.contents-text p{
+		font-size: 180%;
+	}
+
+
+	.contents-img1, .contents-img2, .contents-img3 {
+		height: 265px;
+	}
 }
+
+
+
+
+
+
+
