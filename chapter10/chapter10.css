@@ -18,21 +18,465 @@ header{
 	width: 1024px;
 	height: 70px;
 	margin: 0 auto;
+	position: relative;
 }
 .logo{
 	height: 70px;
 }
 nav{
-	float: right;
+	width: 1024px;
 	height: 70px;
-	text-align: center;
+	float: right;
+}
+.nav-list{
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 70px;
 }
 .nav-list-item{
-	list-style: none;
+	color: #fafafa;
+	width: 120px;
+	padding: 0 30px;
 	font-size: 16px;
+	list-style: none;
 	float: left;
-	margin: 0 30px;
-	line-height: 70px;
+}
+/*==================== main-visual ===================*/
+.main-visual{
+	width: 100%;
+	height: 650px;
+	padding: 0 5%;
+	background-image: url(img/mv.png);
+	background-size: cover;
+	background-position: center;
+}
+.main-visual-contens{
+	text-align: center;
+}
+.main-visual-name{
+	padding-top: 200px;
+	font-size: 64px;
 	color: #fafafa;
 }
-/*==================== main ===================*/
+.main-visual-text{
+	padding: 10px;
+	font-size: 20px;
+	color: #fafafa;
+}
+/*===================== portfolio ======================*/
+.portfolio{
+	width: 100%;
+	background-color: #eceff1;
+}
+.portfolio-box{
+	width: 920px;
+	margin: 0 auto;
+}
+.portfolio-name{
+	font-size: 32px;
+	padding-top: 90px;
+	text-align: center;
+	color: #000000;
+}
+.portfolio-text{
+	font-size: 16px;
+	padding: 30px 0;
+	text-align: center;
+	color: #000000;
+}
+.portfolio-name::after{
+	content: "";
+	display: block;
+	margin: 8px auto 0 auto;
+	width: 70px;
+	border-bottom: 3px solid #ec715f;
+}
+.contents-box{
+	width: 920px;
+	padding: 30px 0 80px 0;
+	margin: 0 auto;
+}
+.contents{
+	width: 300px;
+	height: 250px;
+	margin: 0 10px 10px 0;
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+.img1{
+	background-image: url(img/sketch.jpg);
+}
+.img2{
+	background-image: url(img/websuku.png);
+}
+.img3{
+	background-image: url(img/write.jpg);
+}
+.img4{
+	background-image: url(img/webcamp.png);
+}
+.img5{
+	background-image: url(img/talk.jpg);
+}
+.img6{
+	background-image: url(img/webcamp-mother.png);
+}
+
+.contents:nth-child(3){
+	margin-right: 0;
+}
+.contents:nth-child(6){
+	margin-right: 0;
+}
+/*====================== feature ========================*/
+
+.feature{
+	width: 100%;
+}
+.feature-box{
+	width: 980px;
+	margin: 0 auto;
+}
+.feature-name{
+	text-align: center;
+	padding-top: 90px;
+	font-size: 32px;
+	color: #000000;
+}
+.feature-name::after{
+	content: "";
+	display: block;
+	width: 70px;
+	margin: 8px auto 0 auto;
+	height: 3px;
+	background-color: #ec715f;
+	}
+.feature-text{
+	margin-top: 30px;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+}
+.strength-box{
+	width: 980px;
+	margin-bottom: 90px;
+}
+.strength{
+	width: 320px;
+	margin-right: 10px;
+	padding-top: 30px;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.strength:last-child{
+	margin-right: 0;
+}
+.strength-title{
+	font-size: 20px;
+	padding: 10px 0;
+	font-size: 20px;
+	color: #000000;
+}
+.strength-text{
+	font-size: 16px;
+	text-align: left;
+	color: #000000;
+}
+.fas{
+	font-size: 60px;
+}
+/*================= profile ====================*/
+.profile{
+	width: 100%;
+	background-color: #eceff1;
+}
+.profile-box{
+	width: 1024px;
+	margin: 0 auto;
+}
+.profile-title{
+	padding-top: 90px;
+	font-size: 32px;
+	color: #000000;
+	text-align: center;
+}
+.profile-title::after{
+	content: "";
+	display: block;
+	width: 70px;
+	margin: 8px auto 0 auto;
+	height: 3px;
+	background-color: #ec715f;
+	}
+.profile-text{
+	font-size: 16px;
+	padding-top: 30px;
+	text-align: center;
+}
+.profile-main{
+	padding-bottom: 90px;
+}
+.left-contents{
+	width: 50%;
+	padding-topd: 30px;
+	float: left;
+}
+.profile-img{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 30px;
+	background-image: url(img/my-icon.jpg);
+}
+.right-contents{
+	width: 50%;
+	margin-top: 30px;
+	float: left;
+}
+.p-contents-title{
+	font-size: 20px;
+	margin: 20px 0 5px 0;
+	color: #000000;
+}
+.p-contents-title:first-child{
+	margin-top: 0;
+}
+.p-contents-text{
+	font-size: 16px;
+	color: #000000;
+}
+/*======================= contact =========================*/
+.contact{
+	width: 100%;
+}
+.contact-box{
+	width: 800px;
+	margin: 0 auto;
+}
+.contact-title{
+	padding-top: 90px;
+	font-size: 32px;
+	color: #000000;
+	text-align: center;
+}
+.contact-title::after{
+	content: "";
+	display: block;
+	width: 70px;
+	margin: 8px auto 0 auto;
+	height: 3px;
+	background-color: #ec715f;
+}
+.contact-text{
+	padding: 30px 0;
+	font-size: 16px;
+	text-align: center;
+	color: #000000;
+}
+.c-contents-box{
+	width: 800px;
+	margin-bottom: 90px;
+}
+.contact-left{
+	width: 50%;
+	float: left;
+}
+.c-left-contents{
+	width: 130px;
+	margin: 0 auto;
+}
+.c-contents-title{
+	margin: 20px 0 5px 0;
+	font-size: 20px;
+	color: #000000;
+}
+.c-contents-title:first-child, .c-contents-title:last-child{
+	margin-top: 0;
+}
+.c-contents-mail, .c-contents-tell{
+	color: black;
+}
+.contact-right{
+	width: 50%;
+	float: right;
+}
+.c-right-contents{
+	width: 170px;
+	margin: 0 auto;
+}
+.fab{
+	font-size: 50px;
+	margin-right: 20px;
+	float: left;
+}
+.fab:last-child{
+	margin-right: 0;
+}
+/*================ footer ======================*/
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #ec715f;
+	line-height: 60px;
+	text-align: center;
+}
+.copyright{
+	font-size: 16px;
+	color: #fafafa;
+}
+/*===================レスポンシブ対応======================*/
+@media screen and (max-width:767px){
+/*=================== レスポンシブheader ===================*/
+	header{
+		width: 100%;
+		height: 50px;
+		position: relative;
+		padding: 0 5%;
+	}
+	.header-contents{
+		width:100%;
+		height: 50px;
+		margin: 0 auto;
+	}
+	.logo{
+		height: 50px;
+	}
+
+	.nav_toggle{
+		width: 40px;
+		height: 40px;
+		margin: 5px 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+	.list-bar{
+		width: 25px;
+		display: block;
+		border:	1px solid #fff;
+		margin: 5px auto;
+	}
+	.list-bar:first-child {
+    margin-top: 10px;
+	}
+	.nav_toggle{
+	display: block;
+	}
+	.nav-list{
+		display: none;
+	}
+/*================ レスポンシブmain-visual =====================*/
+	.main-visual{
+		background-image: url(img/code.png);
+		width: 100%;
+	}
+	.main-visual-name{
+		font-size: 40px;
+	}
+	.main-visual-text{
+		font-size: 18px;
+	}
+/*================ レスポンシブportfolio ========================*/
+.portfolio{
+	width: 100%;
+	padding:0 5%;
+	}
+.portfolio-box{
+	width: 300px;
+}
+.contents{
+	float: none;
+}
+.sp-none{
+	display: none;
+
+	}
+/*================ レスポンシブfeature ==========================*/
+.feature{
+	width:100%;
+	padding: 0 5%;
+	background-size: cover;
+    background-position: center;
+}
+.feature-box{
+	width: 100%;
+	margin: 0 auto;
+}
+.strength-box{
+	width: 100%;
+	margin: 0 auto 90px auto;
+}
+.strength{
+	float: none;
+	margin: 0 auto;
+	width: 320px;
+}
+.strength:last-child{
+	margin: 0 auto;
+}
+/*===================== レスポンシブprofile =============================*/
+.profile{
+	width: 100%;
+	padding: 0 5%;
+}
+.profile-box{
+	width: 100%;
+}
+.profile-main{
+	text-align: center;
+}
+.left-contents{
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+.right-contents{
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+.p-contents-title:first-child{
+	padding-top: 20px;
+}
+/*====================== レスポンシブcontact ======================*/
+.contact{
+	width: 100%;
+	padding: 0 5% 90px 5%;
+}
+.contact-box{
+	width: 100%;
+}
+.c-contents-box{
+	width: 100%;
+	margin: 0 auto;
+}
+.contact-left{
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.contact-right{
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+/*======================= レスポンシブfooter =========================-*/
+footer{
+	width: 100%;
+	padding: 0 5%;
+}
+
+
+
+
